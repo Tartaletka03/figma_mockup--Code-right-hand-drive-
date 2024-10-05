@@ -1,0 +1,209 @@
+сделай так, чтобы когда эти два элемента не могли уже находиться на одной высоте документа, форма контактная информация перемещалась выше
+
+.contact_information {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 60px;
+    width: 393px;
+    left: 100px;
+
+   }
+   
+   .contact_content {
+    text-align: left;
+    gap: 12px;
+   }
+   
+   .contact_title {
+    color: #FFFFFF;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 70px;
+    text-align: left;
+    width: 500px;
+    height: 120px;
+
+
+   }
+   
+   .contact_subtitle {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    margin-bottom: 0;
+    color: #FFFFFF80;
+
+
+   }
+   
+   .contact_column {
+    display: flex;
+    flex-direction: column;
+   }
+   
+   .contact_list {
+    flex-direction: column;
+   }
+   
+   .contact_subitem {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: left;
+    color: #FFFFFF80;
+
+
+   }
+   
+   .contact_item {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.78px;
+    text-align: left;
+    color: #FFFFFF;
+
+   }
+
+
+
+
+
+
+.form {
+  background-color: #081E36;
+  border-radius: 10px;
+  bottom: 30px;
+  width: 580px;
+  height: 400px;
+  right: 20px;
+  padding: 40px;
+  gap: 30px;
+  border-radius: 28px;
+  flex-direction: column;
+  display: flex;
+  position: absolute;
+}
+
+.form_text_input{
+    gap: 60px;
+}
+
+.form_content {
+  width: 560px;
+  gap: 16px;
+  display: flex;
+}
+
+.name_input {
+  width: 272px;
+  height: 76px;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.phone_input {
+  width: 272px;
+  height: 76px;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message_input {
+  width: 560px;
+  gap: 0px;
+  border-radius: 16px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-top: 20px;
+}
+
+textarea {
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #20344A;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  resize: vertical;
+}
+
+input, textarea {
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #20344A;
+  border: none;
+  color: #fff;
+}
+
+.form button {
+  background-color: #20344A;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+}
+
+.checkbox input {
+  margin-right: 10px;
+}
+
+.error {
+  color: red;
+  font-family: "Inter", sans-serif;
+}
+
+.red-text {
+  color: red;
+  font-family: "Inter", sans-serif;
+}
+
+.form .message {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+}
+
+.checkbox input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  color: #fff;
+}
+
+.rounded-32 {
+    border-radius: 32px;
+}
+
+.rounded-16 {
+    border-radius: 16px;
+
+}
+
+.submit-button {
+    height: 110px;
+}
+
+.message_input textarea {
+    height: 60px;
+  }
+  
+  

@@ -1,16 +1,76 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Правый Руль</title>
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/footer.css">
-</head>
+    <head>
+
+        <!-- meta -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Правый Руль</title>
+
+        <!--styles-->
+        <link rel="stylesheet" href="styles/body.css">
+        <link rel="stylesheet" href="styles/footer.css">
+        <link rel="stylesheet" href="styles/contact_info.css">
+        <link rel="stylesheet" href="styles/fonts.css">
+        <link rel="stylesheet" href="styles/form.css">
+
+    </head>
 <body>
 
+    <!--Табличка с контактной информацией-->
+    <div class="contact_information">
+        <div class="contact_content">
+            <h1 class="contact_title">КОНТАКТНАЯ ИНФОРМАЦИЯ 👋</h1>
+            <h3 class="contact_subtitle">Оставьте свою заявку и наш менеджер свяжется с Вами для уточнения деталей.</h3>
+        </div>
 
-    
+        <div class="conteiner">
+            <div class="contact_column">
+                <div class="contact_list">
+                    <h3 class="contact_subitem">Звонок по России бесплатный</h3>
+                    <h2 class="contact_item">8 800 550 48 32</h2>
+                </div>
+
+                <div class="contact_list">
+                    <h3 class="contact_subitem">WhatsApp</h3>
+                    <h2 class="contact_item">+7 (924) 420-24-32</h2>
+                </div>
+
+                <div class="contact_list">
+                    <h3 class="contact_subitem">Офис</h3>
+                    <h2 class="contact_item">г. Владивосток, ул. Тополевая 6</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Форма обратной связи-->
+    <div class="form">
+        <div class="form_content">
+            <div class="name_input">
+                <label class="message">Имя</label>
+                <input type="text" id="name" placeholder="Введите имя" class="rounded-32"> <span class="error" id="name-error"></span>
+            </div>
+            <div class="phone_input">
+                <label class="message">Телефон</label>
+                <input type="tel" id="phone" value="+7" placeholder="+7" class="rounded-32"> <span class="error" id="phone-error"></span>
+            </div>
+        </div>
+        <div class="message_input">
+            <label class="message">Уточните свой вопрос:</label>
+            <textarea id="message" placeholder="Введите текст сообщения, укажите страну, марку и год машины."></textarea>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" id="agreement">
+            <label for="agreement" class="rounded-16">С <span class="red-text">правилами политики конфиденциальности</span> ознакомлен</label>
+        </div>
+        <button id="submit-button" class="submit-button">Отправить</button>
+        <p id="success-message"></p>
+    </div>
+
+
+    <!--Нижний контитул-->
     <footer class="footer">
         <div class="container">
             <div class="footer__content">
@@ -59,6 +119,6 @@
         </div>
     </footer>
 
-    <script src=""></script>
+    <script src="scripts/form.js"></script>
 </body>
 </html>
