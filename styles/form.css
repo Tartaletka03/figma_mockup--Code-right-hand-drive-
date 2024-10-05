@@ -138,16 +138,15 @@
 @media (max-width: 666px) {
     .form {
      width: 300px;
-     height: 500px;
-    }
-   
-    .form_text_input {
-     gap: 30px;
+     height: 630px;
+     gap: 60px;
+     right: 0px;
+     padding: 20px;
     }
    
     .form_content {
      width: 300px;
-     gap: 16px;
+     gap: 50px;
      flex-direction: column;
     }
    
