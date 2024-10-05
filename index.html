@@ -13,9 +13,62 @@
         <link rel="stylesheet" href="styles/contact_info.css">
         <link rel="stylesheet" href="styles/fonts.css">
         <link rel="stylesheet" href="styles/form.css">
+        <link rel="stylesheet" href="styles/header.css">
 
     </head>
 <body>
+
+
+    <header>
+        <div class="container" id="contacts">
+            <div class="logo">
+                <img src="https://s3-alpha-sig.figma.com/img/c243/cba7/80d1241e4c01716ee4946c053c22a1fa?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=K25I8pXI9H9oL1UL~a5E2tRpqqgaLL2zp4soo-EbCg0Q7iISF1pfQqOq~hEmTtRhRH27-8sXTpr4zBevAw0-fKjalMQsPhGR0Ljn5MTjdWSJG-uK2lv5ENb-nOEXW59xcuLXoULH-uopCGVApvokYMWF7XZYXoCWBgydTwfPn29HiivSmccf16T0XENAByyZo05ucXTMr40CWChlJ5jYzXP32F2aTuB1DbPz0oeejIC3yaUDfQwqmCUbxqS0nN6kWRjr5Iv4~5u1pCGk0oPpJZDkBSBIOdye1FNuR2Ou9IntV1qR7WF-ZZdN0fEkmmkyFOjLJ~nlNHe~fd65wHjjFQ__" alt="Логотип"  width="100" height="100">
+            </div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#" class="header__link">Авто из Кореи</a></li>
+                    <li><a href="#" class="header__link">Авто из Китая</a></li>
+                    <li><a href="#" class="header__link">Авто из Японии</a></li>
+                    <li><a href="#contacts" class="header__link">Контакты</a></li>
+                        <a href="tel:88005004946" class="header__link">8 (800) 500-49-46</a> 
+                        <a href="#" class="header__link">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Telegram_Messenger.png" alt="Telegram" width="20" height="20">
+                        </a>
+                        <a href="#" class="header__link">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="20" height="20">
+                        </a>
+
+                </ul>
+            </nav>
+                <button class="mobile-nav-toggle">
+                    <span class="mobile-nav-toggle__bar"></span>
+                    <span class="mobile-nav-toggle__bar"></span>
+                    <span class="mobile-nav-toggle__bar"></span>
+                </button>
+            </div>
+        </div>
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="#" class="header__link">Авто из Кореи</a></li>
+                <li><a href="#" class="header__link">Авто из Китая</a></li>
+                <li><a href="#" class="header__link">Авто из Японии</a></li>
+                <li><a href="#contacts" class="header__link">Контакты</a></li>
+                    <li><a href="tel:88005004946" class="header__link">8 (800) 500-49-46</a>
+                    <a href="#" class="header__link">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Telegram_Messenger.png" width="20" height="20" alt="Telegram">
+                      Telegram
+                    </a></li>
+                    <li></li><a href="#" class="header__link">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="20" height="20" alt="WhatsApp">
+                      WhatsApp
+                    </a>
+                  </li>
+                  
+            </ul>
+        </nav>
+    </header>
+
+
 
     <!--Табличка с контактной информацией-->
     <div class="contact_information">
@@ -119,6 +172,9 @@
         </div>
     </footer>
 
+    
+
+    <script src="scripts/header.js"></script>
     <script src="scripts/form.js"></script>
 </body>
 </html>

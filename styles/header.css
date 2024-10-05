@@ -1,0 +1,159 @@
+.container.contacts {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    padding: 20px;
+}
+
+.logo {
+    float: left;
+    margin-right: 30px; 
+}
+
+nav {
+    float: left;
+    margin-right: 30px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.header__link {
+    text-decoration: none;
+    color: #b8b8b8;
+    padding: 0 15px;
+    font-size: 16px;
+    line-height: 100px;
+}
+
+.phone {
+    text-decoration: none;
+    color: #b8b8b8;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    float: right;
+    margin-top: 41px;
+}
+
+/* Стили для мобильной версии */
+
+
+.desktop-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.desktop-nav li {
+    margin-right: 20px;
+}
+
+/* Мобильное меню */
+.mobile-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 20px;
+    background-color: #181818;
+    width: 200px;
+    height: 100vh;
+    z-index: 100;
+    padding: 20px;
+    transition: transform 0.3s ease; /* Добавляем плавный переход */
+}
+
+.mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-nav li {
+    margin-bottom: 10px;
+}
+
+/* Кнопка мобильного меню */
+.mobile-nav-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 101;
+    /* Убираем фон */
+    background: none;
+    border: none;
+    /* Скрываем линии по умолчанию */
+    opacity: 0;
+}
+
+.mobile-nav-toggle__bar {
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    background-color: #fff;
+    margin: 5px 0;
+    transform: translateX(-5px);
+}
+
+/* Медиа запросы */
+@media (max-width: 1070px) {
+    .container.contacts {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+    
+    .mobile-nav-toggle {
+        opacity: 1;
+    }
+    
+    .show{
+        display: block;
+    }
+
+    .phone-container {
+        flex-direction: column;
+    }
+
+    .mobile-nav-toggle {
+        margin-top: 10px; /* Отступ от номера телефона */
+    }
+
+}
